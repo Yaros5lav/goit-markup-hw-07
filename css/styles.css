@@ -80,11 +80,11 @@ p {
 .linkhov:focus {
 	color: var(--company-color);
 }
-.nav__link:not(.current):focus::before,
-.nav__link:not(.current):hover::before {
+.navigation__link:not(.current):focus::before,
+.navigation__link:not(.current):hover::before {
 	transform: scale(1);
  }
- .nav__link::before {
+ .navigation__link::before {
 	transform: scale(0);
 	transition-property: transform;
 	transition-duration: 250ms;
@@ -93,8 +93,8 @@ p {
 .current {
 	position: relative;
 }
-/* .nav__link:not(.current):hover::before, */
-.nav__link::before,
+/* .navigation__link:not(.current):hover::before, */
+.navigation__link::before,
 .current::after {
 	content: "";
 	background-image: url(../images/hover.jpg);
@@ -107,9 +107,11 @@ p {
 	bottom: -1.3px;
 	left: 0;
 }
+/*  */
 .linkhov.current {
 	color: var(--company-color);
 }
+/*  */
 /* logo */
 .logo {
 	font-family: 'Raleway', sans-serif;
@@ -150,10 +152,10 @@ p {
 	padding-left: 15px;
 	/* outline: solid yellow; */
 }
-.nav__list {
+.navigation__list {
 	display: flex;
 }
-.nav__item:not(:last-child) {
+.navigation__item:not(:last-child) {
 	margin-right: 50px;
 }
 .address {
@@ -175,14 +177,14 @@ p {
 	display: flex;
 	align-items: center;
 }
-.nav__link,
-.address-link {
+.navigation__link,
+.address__link {
 	transition-property: color;
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
-.nav__link {
+.navigation__link {
 	position: relative;
 	display:block;
 	padding-top: 32px;

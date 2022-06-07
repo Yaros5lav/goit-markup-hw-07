@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="all">
     <!-- header -->
@@ -27,15 +27,19 @@
           <a href="./index.html" class="link logo navigation__flex"
             ><span lang="en"><span class="logo--web">Web</span>Studio</span></a
           >
-          <ul class="list nav__list navigation__flex">
-            <li class="nav__item">
-              <a href="./index.html" class="link linkhov transition nav__link current">Студия</a>
+          <ul class="list navigation__list navigation__flex">
+            <li class="navigation__item">
+              <a href="./index.html" class="link linkhov transition navigation__link current"
+                >Студия</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="link linkhov transition nav__link">Портфолио</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="link linkhov transition navigation__link"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="" class="link linkhov transition nav__link">Контакты</a>
+            <li class="navigation__item">
+              <a href="" class="link linkhov transition navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -66,7 +70,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero__button transition" data-modal-open>
+          <button type="button" class="hero__button button transition" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -393,7 +397,7 @@
           <p class="footer__title"><em class="footer__title">Подпишитесь на рассылку</em></p>
           <form name="subscribe" class="form-foot">
             <input type="email" name="email" class="subscribe__email" placeholder="E-mail" />
-            <button class="subscribe__button" type="submit">
+            <button class="subscribe__button button" type="submit">
               Подписаться
               <svg width="24" height="24" class="subscribe-icon">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -405,7 +409,7 @@
     </footer>
     <div class="backdrop is-hidden transition" data-modal>
       <div class="modal transition">
-        <button data-modal-close class="modal__close">
+        <button data-modal-close class="modal__close button">
           <svg width="18px" height="18px"><use href="./images/icons.svg#icon-close-b"></use></svg>
         </button>
         <form name="client-data" class="modal-form">
@@ -460,7 +464,7 @@
             Соглашаюсь с рассылкой и принимаю &nbsp
             <a class="agreement__link" href="">Условия договора</a>
           </label>
-          <button class="modal__button" type="submit">Отправить</button>
+          <button class="modal__button button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
